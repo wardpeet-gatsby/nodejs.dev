@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/release-header.css';
+import '../styles/release-header.scss';
 
 interface Props {
   ltsVersion: string;

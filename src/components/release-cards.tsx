@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReleaseData } from '../hooks/useReleaseHistory';
 
-import '../styles/release-cards.css';
+import '../styles/release-cards.scss';
 import appleLogo from '../images/logos/apple-logo.svg';
 import microsoftLogo from '../images/logos/microsoft-download-logo.svg';
 import sourceCodeIcon from '../images/logos/source-code-icon.svg';

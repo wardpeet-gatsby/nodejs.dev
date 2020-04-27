@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/release-toggle.css';
+import '../styles/release-toggle.scss';
 
 interface Props {
   handleClick: void;
