@@ -33,16 +33,17 @@ module.exports = {
         include: ['**/*.md'], // ignore files starting with a dot
       },
     },
-
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.title,
+
         /* eslint-disable @typescript-eslint/camelcase */
         short_name: config.title,
         start_url: '/',
         background_color: config.color,
         theme_color: config.color,
+
         /* eslint-disable @typescript-eslint/camelcase */
         display: config.display,
         icon: config.icon,
@@ -70,7 +71,9 @@ module.exports = {
             options: {
               classPrefix: 'language-',
               inlineCodeMarker: null,
-              aliases: { js: 'javascript' },
+              aliases: {
+                js: 'javascript',
+              },
               showLineNumbers: false,
               noInlineHighlight: false,
             },
@@ -88,5 +91,15 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-emotion',
     },
+    'gatsby-disable-prefetch',
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+      options: {
+        analyzerMode: 'static',
+        reportFilename: '_bundle.html',
+        openAnalyzer: false,
+      },
+    },
+    'gatsby-plugin-route-dictionary',
   ],
 };
