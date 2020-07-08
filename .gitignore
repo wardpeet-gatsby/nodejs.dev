@@ -14,5 +14,4 @@ build
 coverage
 .vscode
 .history
-yarn.lock
 .idea/
